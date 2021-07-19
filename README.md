@@ -1,4 +1,4 @@
-# Complex Networks
+# CV Quantum Complex Networks
 
 This code is used to generate covariance matrices Gaussian cluster states associated with random graphs of CZ gates. In this particular case, the random graphs are generated with python-iGraph according to the Barabasi-Albert (BA) or Watts-Strogatz (WS) model. The number of nodes in the cluster state and the number of different random realisation can be controled as parameters when the code is called (see BA-Graph-State.sh and WS-Graph-State.sh for examples of scripts that pass the parameters).
 
