@@ -15,3 +15,9 @@ This code was written to run with python3.
 ## Associated research
 The code lies at the basis of the numerical results in the following publication: arXiv:2012.15608
 
+## A note on the V2 file
+This V2 of the code uses the analytical result that local photon subtraction can only change correlations up to a certain distance from the node in which photons were subtracted. For WS networks with a mean connectivity that is orders of magnitude smaller than the total number of nodes in the network, the number of correlations that are affected by the photon subtraction is much smaller than the total number of nodes. In this version of the code, we first calculate all Gaussian correlations and subsequently only update the correlations that are affected by the photon subtraction.
+
+This V2 version of the code calculates correlations in the initial Gaussian state through an analytical formula that was not used in the previous version of the code.
+
+Both improvements considerable accelerate the calculations, allowing us to study much larger networks. V1 of the code does not make any assumption and calculates Gaussian correlations and correlations in the photon subtracted state in the same way by using pair partitions. In this sense, V1 allows us to test theoretical the results used in numerically.
